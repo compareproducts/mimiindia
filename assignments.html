@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Assignments</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+<style>
+	.navbar-brand img {
+max-width: 7vw; /* find suitable value for you */
+display: block;
+width: 100%;
+	}
+	</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container">
+		<a class="navbar-brand" href="./index.html">
+			<img src="./images/icons/logo1.png" alt="Logo">
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item"><a class="nav-link" href="./assignments.html">Assignments</a></li>
+				<li class="nav-item"><a class="nav-link" href="./cars-and-transport.html">Cars and Transport</a></li>
+				<li class="nav-item"><a class="nav-link" href="./charity.html">Charity</a></li>
+				<li class="nav-item"><a class="nav-link" href="./courses.html">Courses</a></li>
+				<li class="nav-item"><a class="nav-link" href="./housing.html">Housing</a></li>
+				<li class="nav-item"><a class="nav-link" href="./holidays.html">Holidays</a></li>
+				<li class="nav-item"><a class="nav-link" href="./immigration.html">Immigration Services</a></li>
+				<li class="nav-item"><a class="nav-link" href="./jobs.html">Jobs</a></li>
+				<li class="nav-item"><a class="nav-link" href="./loans.html">Loans</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="./assets/images/assignments.jpg" alt="IMG">
+					<h3 style="text-align: center; margin-top: 1em;">Assignments</h3>
+				</div>
+				<div id="success" class="login100-form" hidden>
+					<h3 style="text-align: center; margin-top: 1em;">We got your details, our team will contact you
+						shortly.</h3>
+					<div class="text-center p-t-136">
+						<span class="txt2">
+							&nbsp;
+						</span>
+					</div>
+				</div>
+				<div id="fail" class="login100-form" hidden>
+					<h3 style="text-align: center; margin-top: 1em;">Something went wrong, Please try again later!</h3>
+					<div class="text-center p-t-136">
+						<span class="txt2">
+							&nbsp;
+						</span>
+					</div>
+				</div>
+				<form id="form" class="login100-form validate-form">
+					<span class="login100-form-title">
+						Provide your details, our team will contact you shortly.
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid name is required: John Doe">
+						<input class="input100" type="text" name="entry.225613775" placeholder="Name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="entry.676986344" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Phone number is required">
+						<input class="input100" type="text" name="entry.497618091" placeholder="Phone">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Submit
+						</button>
+					</div>
+
+					<div class="text-center p-t-136">
+						<span class="txt2">
+							&nbsp;
+						</span>
+					</div>
+
+					<!-- <div class="text-center p-t-136">
+						<a class="txt2" href="#">
+							&nbsp;
+						</a>
+					</div>  -->
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<script src="js/main.js"></script>
+
+	<script>
+		const form = document.querySelector("#form");
+		const success = document.querySelector("#success");
+		const fail = document.querySelector("#fail");
+		form.addEventListener('submit', async (event) => {
+			event.preventDefault();
+			const formData = new FormData(form);
+			let formid = "1FAIpQLSdvk2IWMNOpQwWgFYPEOStr9PlccCkr3HiiLCapOh87b72Tdw";
+			const googleFormUrl = `https://docs.google.com/forms/d/e/${formid}/formResponse`;
+			try {
+				const res = await fetch(googleFormUrl, {
+					method: "POST",
+					body: formData,
+					mode: "no-cors",
+				});
+				if (res.status==200){
+				form.remove();
+				success.hidden = false;}
+				else {
+					throw new Error('Improper data');
+				}
+			} catch (error) {
+				console.log("Error submitting form", error);
+				form.remove();
+				fail.hidden = false;
+			}
+		});
+
+	</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
