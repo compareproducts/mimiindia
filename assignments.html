@@ -139,7 +139,7 @@ width: 100%;
 	<script src="js/main.js"></script>
 
 	<script>
-		const form = document.querySelector("#form");
+		const form = document.getElementById("form");
 		const success = document.querySelector("#success");
 		const fail = document.querySelector("#fail");
 		form.addEventListener('submit', async (event) => {
@@ -148,12 +148,12 @@ width: 100%;
 			let formid = "1FAIpQLSdvk2IWMNOpQwWgFYPEOStr9PlccCkr3HiiLCapOh87b72Tdw";
 			const googleFormUrl = `https://docs.google.com/forms/d/e/${formid}/formResponse`;
 			try {
-				const res = await fetch(googleFormUrl, {
+				const response = await fetch(googleFormUrl, {
 					method: "POST",
 					body: formData,
 					mode: "no-cors",
 				});
-				if (res.status==200){
+				if (response.ok){
 				form.remove();
 				success.hidden = false;}
 				else {
