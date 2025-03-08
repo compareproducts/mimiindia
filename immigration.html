@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Assignments</title>
+	<title>AZ Immigration</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
@@ -44,7 +44,6 @@ width: 100%;
 				<li class="nav-item"><a class="nav-link" href="./holidays.html">Holidays</a></li>
 				<li class="nav-item"><a class="nav-link" href="./immigration.html">Immigration Services</a></li>
 				<li class="nav-item"><a class="nav-link" href="./jobs.html">Jobs</a></li>
-				
 			</ul>
 		</div>
 	</div>
@@ -54,8 +53,8 @@ width: 100%;
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="./assets/images/assignments.jpg" alt="IMG">
-					<h3 style="text-align: center; margin-top: 1em;">Assignments</h3>
+					<img src="./assets/images/immigration0.jpg" alt="IMG">
+					<h3 style="text-align: center; margin-top: 1em;">AZ Immigration</h3>
 				</div>
 				<div id="success" class="login100-form" hidden>
 					<h3 style="text-align: center; margin-top: 1em;">We got your details, our team will contact you
@@ -95,22 +94,21 @@ width: 100%;
 						</span>
 					</div>
 
-
 					<div class="wrap-input100 validate-input" data-validate="Phone number is required">
 						<input class="input100" type="text" name="entry.497618091" placeholder="Phone">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-phone" aria-hidden="true"></i>
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
 						</span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate="">
 						<input class="input100" type="textarea" name="entry.1974268374" placeholder="Brief description">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-briefcase" aria-hidden="true"></i>
+							<i class="fa fa-icon" aria-hidden="true"></i>
 						</span>
 					</div>
-					<input type="hidden" name="entry.1020018923" value="assignments">
+					<input type="hidden" name="entry.1020018923" value="immigration">
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							Submit
@@ -122,6 +120,12 @@ width: 100%;
 							&nbsp;
 						</span>
 					</div>
+
+					<!-- <div class="text-center p-t-136">
+						<a class="txt2" href="#">
+							&nbsp;
+						</a>
+					</div>  -->
 				</form>
 			</div>
 		</div>
@@ -151,6 +155,7 @@ width: 100%;
 				const res = await fetch(googleFormUrl, {
 					method: "POST",
 					body: formData,
+					mode: "no-cors",
 				});
 				if (res.status==200){
 				form.remove();
