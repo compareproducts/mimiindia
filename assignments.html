@@ -16,10 +16,21 @@
 	
 <style>
 	.navbar-brand img {
-max-width: 7vw; /* find suitable value for you */
-display: block;
-width: 100%;
-	}
+	display: block;
+	width: 90px;
+	max-width: 100%;
+}
+.navbar > .container {
+	max-width: 1400px;
+}
+.navbar-nav .nav-link {
+	white-space: nowrap;
+	font-size: 15px;
+	padding: 8px 10px;
+}
+@media (max-width: 991.98px) {
+	.navbar-nav .nav-link { padding: 8px 0; }
+}
 	</style>
 </head>
 
@@ -44,7 +55,7 @@ width: 100%;
 				<li class="nav-item"><a class="nav-link" href="./holidays.html">Holidays</a></li>
 				<li class="nav-item"><a class="nav-link" href="./immigration.html">Immigration Services</a></li>
 				<li class="nav-item"><a class="nav-link" href="./jobs.html">Jobs</a></li>
-				
+				<li class="nav-item"><a class="nav-link" href="./medical.html">Medical Tourism</a></li>				
 			</ul>
 		</div>
 	</div>
@@ -80,7 +91,7 @@ width: 100%;
 					</span>
 
 					<div class="wrap-input100">
-						<input class="input100" type="text" name="entry.225613775" data-name="name" placeholder="Name" minlength="3" required>
+						<input class="input100" type="text" name="entry.1831249400" data-name="name" placeholder="Name" minlength="3" required>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -88,7 +99,7 @@ width: 100%;
 					</div>
 
 					<div class="wrap-input100">
-						<input class="input100" type="email" name="entry.676986344" placeholder="Email" required>
+						<input class="input100" type="email" name="entry.1245518880" placeholder="Email" required>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -97,20 +108,20 @@ width: 100%;
 
 
 					<div class="wrap-input100">
-						<input class="input100" type="tel" required name="entry.497618091" placeholder="Phone">
+						<input class="input100" type="tel" required name="entry.1164664383" placeholder="Phone">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-phone" aria-hidden="true"></i>
 						</span>
 					</div>
 					<div class="wrap-input100 validate-input">
-						<input class="input100" type="textarea" name="entry.1974268374" placeholder="Brief description">
+						<input class="input100" type="textarea" name="entry.412262374" placeholder="Brief description">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-briefcase" aria-hidden="true"></i>
 						</span>
 					</div>
-					<input type="hidden" name="entry.1020018923" value="assignments">
+					<input type="hidden" name="entry.1479408707" value="assignments">
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							Submit
@@ -145,7 +156,7 @@ width: 100%;
 		form.addEventListener('submit', async (event) => {
 			event.preventDefault();
 			const formData = new FormData(form);
-			let formid = "1FAIpQLSdvk2IWMNOpQwWgFYPEOStr9PlccCkr3HiiLCapOh87b72Tdw";
+			let formid = "1FAIpQLSdbtL_Wj-cYtd8Lw3GxBmBHVkYJt-JO-ybe5b11OnQfshzY0Q";
 			const googleFormUrl = `https://docs.google.com/forms/d/e/${formid}/formResponse`;
 			try {
 				const response = await fetch(googleFormUrl, {

@@ -59,10 +59,21 @@
     }
 
 	.navbar-brand img {
-max-width: 7vw; /* find suitable value for you */
-display: block;
-width: 100%;
-	}
+	display: block;
+	width: 90px;
+	max-width: 100%;
+}
+.navbar > .container {
+	max-width: 1400px;
+}
+.navbar-nav .nav-link {
+	white-space: nowrap;
+	font-size: 15px;
+	padding: 8px 10px;
+}
+@media (max-width: 991.98px) {
+	.navbar-nav .nav-link { padding: 8px 0; }
+}
   </style>
 </head>
 
@@ -88,6 +99,7 @@ width: 100%;
           </a>
         </div>
         <ul class="nav">
+          <li><a href="./medical.html">Medical Tourism</a></li>
           <li><a href="./assignments.html">Assignments</a></li>
           <li><a href="./business-visa.html">Business Visa</a></li>
           <li><a href="./cars-and-transport.html">Cars and Transport</a></li>
@@ -132,9 +144,9 @@ width: 100%;
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="image-container">
-            <a href="./immigration.html" class="project-description">
-              <img alt="" src="./assets/images/immigration0.jpg">
-              <h3>AZ Immigration</h3>
+            <a href="./medical.html" class="project-description">
+              <img alt="" src="./assets/images/medical.png">
+              <h3>Medical Tourism</h3>
             </a>
           </div>
         </div>
@@ -215,7 +227,16 @@ width: 100%;
           </div>
         </div>
         
-
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="image-container">
+            <a href="./immigration.html" class="project-description">
+              <img alt="" src="./assets/images/immigration0.jpg">
+              <h3>AZ Immigration</h3>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
